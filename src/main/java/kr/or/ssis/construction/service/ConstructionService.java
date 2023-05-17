@@ -1,6 +1,10 @@
 package kr.or.ssis.construction.service;
 
+import kr.or.ssis.construction.model.Construction;
+
+import java.util.List;
+
 public interface ConstructionService {
-    String viewAllContructions();
-    String viewContructionDetailsByConstId(String constId);
+    List<Construction> viewAllContructions();
+    Construction viewContructionDetailsByConstId(String constId);
 }
