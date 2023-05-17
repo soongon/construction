@@ -1,6 +1,6 @@
 package kr.or.ssis.construction.controller;
 
-import kr.or.ssis.construction.service.ContructionService;
+import kr.or.ssis.construction.service.ContructionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConstructionController {
 
     @Autowired
-    private ContructionService service;
+    private ContructionServiceImpl service;
 
     @GetMapping("/constructions")
     public String viewAllContructions() {

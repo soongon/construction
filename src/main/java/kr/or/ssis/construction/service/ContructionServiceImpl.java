@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 // 기능수행, 트랜잭션
 @Service
-public class ContructionService {
+public class ContructionServiceImpl implements ConstructionService {
 
     @Autowired
     private ConstructionDao constructionDao;
